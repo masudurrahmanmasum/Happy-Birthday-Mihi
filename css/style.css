@@ -1,0 +1,312 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+}
+
+
+/*-------------------------------------------------------------------------------
+.............................header style start...................................
+---------------------------------------------------------------------------------*/
+/* #loader{
+    width: 100vw;
+    height: 100vh;
+    background-image: #1A2A44 url('../image/loading.gif') no-repeat center center;
+    position: fixed;
+    z-index: 100;
+    background-size: 50%;
+} */
+
+#headsec{
+    width: 100%;
+    height: 100vh;
+    background:#06031d;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+.first_head_text{
+    font-size:90px;
+    font-family: 'Fredoka One', cursive;color:white;
+    background: linear-gradient(180deg,#f80112 22%,#2602f5 45%);
+    cursor: pointer;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.second_head_text{
+    margin-top: 5px;
+    background: linear-gradient(180deg,#f80112 40%,#2602f5 75%);
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.main_enter{
+    margin-top: 40px;
+    margin: auto;
+    width: 700px;
+    height:250px;
+    border: 2px solid #3701E1;
+    border-radius: 3px;
+    box-shadow: -1px 0px 6px 2px rgb(207 205 205 / 60%);
+    background: #06031d;
+}
+.left-enter{
+    width: 40%;
+    margin: 50px 0;
+    color: #fff;
+    border-right: 1px dotted #fff;
+    text-align: center;
+    line-height: 0.7;
+    float: left;
+}
+.left-enter h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.left-enter i{
+    color: yellow;
+    font-size: 21px;
+}
+.left-enter p{
+    font-size: 15px;
+}
+.left-enter input{
+    padding:3px 5px 3px 10px;
+    display: block;
+    margin:auto;
+    outline: none;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(207, 205, 205, 0.603);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.left-enter input:hover{
+    border: 2px solid #F80112;
+}
+.left-enter input::placeholder{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.submit::before{
+    content: "";
+    border-top: 2px solid red;
+}
+.submit {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1px 5px;
+    font-size: 13px;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+.submit:hover{
+    background: #3701E1;
+    color: #fff;
+    border-color: aqua;
+}
+
+/*----------------------------------img slider--------------------------*/
+.right_loading{
+    width: 60%;
+    height: 250px;
+    float: right;
+}
+.main-slide {
+    width: 48%;
+    height: 70%;
+    margin: auto;
+    background-image: url(../image/image-1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 34px;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider {
+    0%{
+        background-image: url(../image/image-1.gif);
+    }
+    25%{
+        background-image: url(../image/image-2.gif);
+    }
+    50%{
+        background-image: url(../image/image-4.jpg);
+    }
+    75%{
+        background-image: url(../image/image-5.gif);
+    }
+}
+
+/* ----------------------------footer style----------------------------------- */
+/* footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.footer_sec {
+    height: 50px;
+    background: rgb(255 255 255 / 17%);
+}
+.footer_sec p{
+    margin-top: 15px; 
+}
+.first-foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-foot{
+    flex-basis: 40%;
+}
+.right-foot{
+    flex-basis: 40%;
+    right: 0;
+}
+.left-foot p {
+    margin-left: 50px;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+.right-foot p{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+.foot-icon{
+    flex-basis: 20%;
+    text-align: center;
+}
+.foot-icon i{
+    padding: 2px;
+    font-size: 17px;
+    margin: 5px 6px;
+
+}
+.right-foot a,.left-foot a{
+    color: tomato;
+    text-decoration: none;
+}
+.left-foot a:hover{
+    text-decoration: underline;
+}
+.right-foot a:hover{
+    text-decoration: underline;
+} */
+/*-------------------------------------------------------------------------------
+.............................header style end...................................
+---------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------
+.............................responcive style start...............................
+---------------------------------------------------------------------------------*/
+@media(max-width:767px){
+    .first_head_text{
+        padding-top: 30px;
+        font-size:70px;
+    }
+    .main_enter{
+        width: 550px;
+        height: 35vh;
+    }
+    .left-enter{
+        width: 100%;
+        margin: 60px 0 40px 0;
+    }
+    .left-enter h2{
+        font-size: 35px;
+    }
+    .left-enter p{
+        font-size: 17px;
+        padding-bottom: 5px;
+    }
+    .submit {
+
+        padding: 2px 8px;
+    }
+    .left-enter input{
+        padding:5px 15px 5px 15px;
+    }
+    .right_loading{
+        width: 100%;
+    }
+    .main-slide {
+        width: 70%;
+        height: 70%;
+        margin-top: 17px;
+        background-size: contain;
+    }
+    .left-foot{
+        flex-basis: 60%;
+    }
+    .left-foot p{
+        margin-left: 20px;
+    }
+    .foot-icon{
+        flex-basis: 40%;
+    }
+    .right-foot{
+        display: none;
+    }
+    #loader{
+        background-size: 60%;
+    }
+}
+@media(max-width:576px){
+    .first_head_text{
+        padding-top: 5px;
+        font-size: 55px;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    .second_head_text {
+        margin-top: -15px;
+    }
+    .main_enter{
+        height:auto;
+        border: none;
+        width: 400px;
+        box-shadow: none;
+    }
+    .main_enter::before{
+        content: "";
+        width: 80%;
+        background: #fff;
+        height: 1px;
+        display: block;
+        margin: auto;
+    }
+    .left-enter{
+        border-right: none;
+        line-height: 1.5;
+        margin: 20px 0 40px 0;
+    }
+    .left-foot{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .foot-icon{
+        display: none;
+    }
+    .main-slide{
+        margin-top: 0;
+    }
+
+}
+/*-------------------------------------------------------------------------------
+.............................responcive style end.................................
+-------------------------------------------------------------------------------- */

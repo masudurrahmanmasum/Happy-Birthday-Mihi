@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #06031D;
+    color: #fff;
+    padding: 20px;
+    flex-direction: column;
+}
+i{ 
+    flex-direction: column;
+    color: tomato;
+    font-size: 100px;
+    display: block;
+}
+h3 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+}
+button {
+    padding: 5px 10px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    background: indigo;
+    color: #fff;
+    margin-top: 20px;
+}

@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background: #06031D ;
+}
+.next-btn{
+    float: right;
+    position: relative;
+    
+  }
+  .previous-btn{
+    float: left;
+    position: relative;
+    
+  }
+  #previous_icon {
+    top: 50px;
+    position: absolute;
+    border: 2px solid #DA314B;
+    padding: 5px;
+    border-radius: 6px;
+    background: #EDD067;
+    left: 30px;
+    font-size: 17px;
+    color: #01BEB8;
+  }
+  #next_icon {
+    top: 50px;
+    position: absolute;
+    border: 3px solid #DA314B;
+    padding: 5px;
+    border-radius: 6px;
+    background: #EACD66;
+    right: 30px;
+    font-size: 17px;
+    color: #01BEB8;
+  }
+.first_head_text{
+    padding-top: 60px;
+    font-size:80px;
+    font-family: 'Fredoka One', cursive;color:white;
+    background: linear-gradient(180deg,#f80112 36%,#2602f5 53%);
+    cursor: pointer;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.second_head_text{
+    margin-top: 4px;
+    background: linear-gradient(180deg,#f80112 40%,#2602f5 75%);
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.card_body{
+    width: 220px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -5px -5px 20px 0 rgb(255 255 255 / 43%);
+    
+}
+.the_card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+.card_front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #DA314B;
+    font-size: 18px;
+}
+.card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.back-img1{
+    background-image: url('../image/backimg1.gif');  
+}
+.back-img2{
+    background-image: url('../image/backimg2.gif');  
+}
+.back-img3{
+    background-image: url('../image/backimg3.gif');  
+}
+.back-img4{
+    background-image: url('../image/backimg4.gif');  
+}
+.back-img5{
+    background-image: url('../image/backimg5.gif');  
+}
+.back-img6{
+    background-image: url('../image/backimg6.gif');  
+}
+.back-img7{
+    background-image: url('../image/backimg7.gif');  
+}
+.back-img8{
+    background-image: url('../image/backimg8.gif');  
+}
+
+
+.the_card:hover{
+    transform: rotateY(180deg);
+}
+.row{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    
+}
+.row>.card_body {
+    margin: 0 20px;
+    margin-top: 20px;
+}
+.second_row{
+    padding-bottom: 20px;
+}
+@media(max-width:576px){
+
+    .first_head_text {
+        padding-top: 80px;
+        font-size: 55px;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    .card_body{
+        width: 250px;
+        height: 290px;
+    }
+    .row>.card_body {
+        margin: 20px 5px;
+    }
+    .second_row{
+        margin-top: 0;
+    }
+    /* .first_head_text {
+        padding-top: 130px;
+        font-size: 80px;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        background: linear-gradient(180deg,#f80112 60%,#2602f5 72%);
+        cursor: pointer;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 35px;
+    } */
+    .card_front{
+        font-size: 22px;
+    }
+    #previous_icon {
+        top: 40px;
+      }
+      #next_icon{
+        top: 40px;
+      }
+
+}

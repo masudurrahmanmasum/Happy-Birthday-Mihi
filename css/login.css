@@ -1,0 +1,219 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url(../image/giftbg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.previous-btn{
+    float: left;
+    position: relative;
+    
+  }
+  #previous_icon {
+    top: 30px;
+    position: absolute;
+    border: 2px solid #DA314B;
+    padding: 5px;
+    border-radius: 6px;
+    background: #EDD067;
+    left: 30px;
+    font-size: 17px;
+    color: #01BEB8;
+  }
+.front p,.front h2{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sansita Swashed', cursive;
+    color: #C6C6C8;
+}
+.front p{
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20px;
+}
+.front h2{
+    font-size: 32px;
+}
+.front_text{
+    margin-top: 50%;
+}
+
+.card{
+    height: 400px;
+    width: 570px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 300px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: 2s;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+
+}
+
+.outside{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: 2s;
+    transform-origin: left;
+}
+
+.card:hover{
+    transform: rotate(-5deg);
+}
+.card:hover .outside{
+    transform: rotateY(-130deg);
+}
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /*hide backface in firefox*/
+    transform: rotateX(0deg);   
+}
+.front{
+    background-color: #BE0F04;
+    z-index: 1;
+}
+.back{
+    background: linear-gradient(
+        to right,
+        #BE0F04 50%,
+        #7d0b03
+    );
+    transform: rotateY(179deg);
+}
+.inside{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(
+        to left,
+        #BE0F04 50%,
+        #7d0b03
+    );
+}
+/*----------------form style-------------*/
+
+form {
+width: 70%;
+height: auto;
+margin: 40% auto;
+background: #FEF8DC;
+padding: 10px;
+border-radius: 2px;
+}
+
+form label {
+font-family: sans-serif;
+color: #E07C4B;
+font-size: 13px;
+}
+input[type="text"],input[type="password"] {
+padding: 3px;
+background: #aba4a42b;
+outline: none;
+border: 1px solid blue;
+border-radius: 3px;
+padding-left: 5px;
+font-size: 13px;
+font-weight: 200;
+}
+input[type="submit"] {
+padding: 3px 5px;
+margin-top: 10px;
+background: #f1a8b4;
+outline: navajowhite;
+border-radius: 5px;
+font-size: 13px;
+color: #fff;
+cursor: pointer;
+border: 1px solid #e2919f;
+}
+input[type="submit"]:hover{
+background: #fff;
+color: #f1a8b4;
+}
+form a {
+text-decoration: none;
+font-size: 11px;
+color: red;
+font-family: arial;
+font-weight: 200;
+margin-left: 17px;
+}
+form a:hover{
+color: blue;
+text-decoration: underline;
+}
+@media(max-width:767px){
+.container{
+background-image: url(../image/mobile.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw;
+position: relative;
+-webkit-background-size: cover;
+}
+#previous_icon {
+    top: 60px;
+}
+}
+@media(max-width:576px){
+.container{
+background-image: url(../image/mobile.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw;
+position: relative;
+-webkit-background-size: cover;
+}
+.card {
+    height: 290px;
+    width: 400px;
+}
+input[type="text"], input[type="password"] {
+    padding: 1px;
+    width: 115px;
+}
+input[type="submit"] {
+    padding: 2px 1px;
+    font-size: 12px;
+}
+form a {
+    margin-left: 5px;
+}
+
+}
+@media(max-width: 400px){
+    .card {
+        height: 250px;
+        width: 380px;
+    }
+}
